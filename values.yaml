@@ -729,6 +729,14 @@ server:
       #   crypto_key  = "vault-helm-unseal-key"
       #}
 
+      seal "awskms" {
+        region     = "us-west-2"
+        access_key = "AKIAV7Q7V3DQXFRC35GY"
+        secret_key = "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"
+        kms_key_id = "688ef28d-8992-464b-abdb-fc284ad655b9"
+        # endpoint   = "arn:aws:kms:us-west-2:411309562081:alias/vaultSeal"
+      }
+
       # Example configuration for enabling Prometheus metrics in your config.
       #telemetry {
       #  prometheus_retention_time = "30s",
