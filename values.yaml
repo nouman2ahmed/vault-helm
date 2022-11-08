@@ -460,9 +460,9 @@ server:
     # path: /v1/sys/health?standbyok=true
 
     # When a probe fails, Kubernetes will try failureThreshold times before giving up
-    failureThreshold: 2
+    failureThreshold: 20
     # Number of seconds after the container has started before probe initiates
-    initialDelaySeconds: 5
+    initialDelaySeconds: 30
     # How often (in seconds) to perform the probe
     periodSeconds: 5
     # Minimum consecutive successes for the probe to be considered successful after having failed
