@@ -455,7 +455,7 @@ server:
 
   # Used to define custom readinessProbe settings
   readinessProbe:
-    enabled: true
+    enabled: false
     # If you need to use a http path instead of the default exec
     # path: /v1/sys/health?standbyok=true
 
@@ -471,7 +471,7 @@ server:
     timeoutSeconds: 3
   # Used to enable a livenessProbe for the pods
   livenessProbe:
-    enabled: true
+    enabled: false
     path: "/v1/sys/health?standbyok=true"
     # When a probe fails, Kubernetes will try failureThreshold times before giving up
     failureThreshold: 2
@@ -495,9 +495,9 @@ server:
   # This can be used to automate processes such as initialization
   # or boostrapping auth methods.
   postStart: 
-    - /bin/sh
-    - -c
-    - curl http://127.0.0.1:8200/v1/sys/init
+   # - /bin/sh
+   # - -c
+   # - curl http://127.0.0.1:8200/v1/sys/init
 
 
   # extraEnvironmentVars is a list of extra environment variables to set with the stateful set. These could be
