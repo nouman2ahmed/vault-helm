@@ -732,8 +732,8 @@ server:
 
       seal "awskms" {
         region     = "us-west-2"
-        access_key = "AKIAV7Q7V3DQXFRC35GY"
-        secret_key = "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"
+        access_key = ""
+        secret_key = ""
         kms_key_id = "688ef28d-8992-464b-abdb-fc284ad655b9"
         # endpoint   = "arn:aws:kms:us-west-2:411309562081:alias/vaultSeal"
       }
